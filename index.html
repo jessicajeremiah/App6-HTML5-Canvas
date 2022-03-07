@@ -38,6 +38,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	/* var docMod = document.lastModified; // loads last modified time stamp 
 alert("This file last modified " + docMod); // generates alert box with time stamp. If it gets annoying I can comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console which is found in developers tools that outputs the time stamp. */
+
 var a_canvas = document.getElementById("a"); /* making an element for the canvas using the outline/example from diveintohtml5, can be used in my functions to recall back easier to my canvas element */	
 	
 function draw_a (){
@@ -111,19 +112,30 @@ function draw_d (){
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>App6---HTML5-Canvas</h1>
+	<h1>App6-HTML5-Canvas</h1>
 </div>
+
+<canvas id="a" width="400" height="500">	<!-- values for border, sort of like the max area where the rectangle, name, and image can be-->
+	</canvas>
 	
 <div id="content" class="w3-container">
-	<p>Content goes here.</p>
-		
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	
+	<button onclick="draw_a();" class="w3-button w3-white w3-border w3-border-aqua w3-round"> Draw a Rectangle</button>
+<!-- created button to draw my rectangle on the canvas, reusing my white/aqua buttons from my previous apps-->
+	
+	<button onclick="draw_b();" class="w3-button w3-white w3-border w3-border-aqua w3-round"> My Name is</button>
+	<!-- created button to write my name on the canvas, reusing my button style-->
+	
+	<button onclick="draw_c();" class="w3-button w3-white w3-border w3-border-aqua w3-round"> Insert Image</button>
+	<!-- created button to insert the image of the bird meme, resued button-->
+
+	<button onclick="draw_d();" class="w3-button w3-white w3-border w3-border-aqua w3-round"> Clear Canvas</button>	
+	<!--created button to clear the canvas-->
+</div>		
+	
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
 
 </body>
-</html>

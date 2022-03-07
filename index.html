@@ -37,8 +37,54 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	/* var docMod = document.lastModified; // loads last modified time stamp 
 alert("This file last modified " + docMod); // generates alert box with time stamp. If it gets annoying I can comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. */
+console.log("This file last modified " + docMod); // generates message in javaScript console which is found in developers tools that outputs the time stamp. */
+var a_canvas = document.getElementById("a"); /* making an element for the canvas using the outline/example from diveintohtml5, can be used in my functions to recall back easier to my canvas element */	
+	
+function draw_a (){
+	var a_canvas = document.getElementById("a");
+	var a_context = a_canvas.getContext("2d");
+	a_context.fillRect(15, 15, 50, 70); //increased width and height for rectangle
+	a_context.fillStyle = "Blue"; //code to change the color of the rectangle to a solid blue; doing this code alone also changed my font color, so I need to make a separate code for the font//
+}		//just realized this fill style code only works if you click the button twice; the rectangle starts off as black, then changes blue upon the second click; however clearing the canvas will make the rectangle blue if clicked on after clearing// 
+/* created getelementid variable that calls back to original variable 'a' */ 
+/* for FillRect i put random x,y,height,width values to just test out how the rectangle will look when created, and made adjustments after I made the buttons. */
 
+	
+function draw_b (){
+	var b_canvas = document.getElementById("a");
+	var b_context = b_canvas.getContext("2d");
+	document.getElementById("a").style.color = "#ff0000"; //this hex code doesn't change the color of the button, I need to find an alternative.//
+	/* using same format as before to call back to my canvas element with the id of 'a' */
+	b_context.font = '18px Comic Sans MS' /* used a random font as my placeholder for the text; I can make the font any font that I want */
+	b_context.fillText("Jessica", 150, 50); //shifted the text to the right//
+	
+/* random x and y values as a placeholder to write the text in my canvas, 
+using 7.5 and 7.5 because they're half of the value of 15 I had put for my placeholder for the x and y of the canvas, 
+which will hopefully make my text in the middle of the canvas */
+}	
+	
+function draw_c (){
+	var c_canvas = document.getElementById("a");
+	var c_context = c_canvas.getContext("2d");
+// using the same format as my other functions to call back my 'a' canvas //
+	var birb = new Image();
+	birb.src = "https://imagesvc.meredithcorp.io/v3/jumpstartpure/image?url=https://cf-images.us-east-1.prod.boltdns.net/v1/static/1125866826/8784cfd6-daa6-41da-83f1-1b0544905f7b/0a9b9056-3f44-4140-a934-c8903de417da/1280x720/match/image.jpg&w=1280&h=720&q=90&c=cc">
+	
+	birb.onload = function() {
+// when making the create image function and variables, I realized that, just like recalling back to my canvas element "a", I also need to conveniently call back to an image, so I am creating a variable called "birb" (aka bird) that I can effectively recall to back in the function; I might consider moving this variable under the create iage function if this placement does not work //
+	c_context.drawImage(birb, 20, 150, 300, 300); //using very large y value so that image doesn't cover rectangle and name; initially used negative y value but that shifted the image up instead of down//
+	};
+}
+	// recalling back to my image variable "birb", trying out random x,y,width,height to see what the image looks like if it fills up my rectangle completely //
+		
+function draw_d (){
+	var d_canvas = document.getElementById("a");
+	var d_context = d_canvas.getContext("2d");
+// using same format to call back to my canvas id //
+	d_context.clearRect(0, 0, 500, 500);
+/* code to clear my canvas, putting random maxed x,y,width,height coordinates to see if I can effectively clear my canvas this way, or that I might need to put in variables that can clear based on changes in x/y/width/height */
+}
+	
 </script>
 <!-- tells you what the design of the code will be -->
 

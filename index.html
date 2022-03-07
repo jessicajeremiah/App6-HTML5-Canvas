@@ -83,7 +83,7 @@ function draw_c (){
 function draw_d (){
 	var d_canvas = document.getElementById("a");
 	var d_context = d_canvas.getContext("2d");
-// using same format to call back to my canvas id //
+	// using same format to call back to my canvas id //
 	d_context.clearRect(0, 0, 500, 500); //coordinates for the maximum area the button will clear once clicked//
 }
 	
@@ -122,16 +122,16 @@ function draw_d (){
 <div id="content" class="w3-container">
 	
 	<button onclick="draw_a();" class="w3-button w3-grey w3-border w3-border-black w3-round"> Draw a Rectangle</button>
-	<!-- created button to draw my rectangle on the canvas, reusing my grey/black buttons from my previous apps-->
+	<!-- created button to draw my rectangle on the canvas, reusing my grey/black buttons from my previous apps -->
 	
 	<button onclick="draw_b();" class="w3-button w3-grey w3-border w3-border-black w3-round"> My Name is</button>
-	<!-- created button to write my name on the canvas, reusing my button style-->
+	<!-- created button to write my name on the canvas, reusing my button style -->
 	
 	<button onclick="draw_c();" class="w3-button w3-grey w3-border w3-border-black w3-round"> Insert Image</button>
-	<!-- created button to insert the image of the meme, resued button-->
+	<!-- created button to insert the image of the meme, resued button -->
 
-	<button onclick="draw_d();" class="w3-button w3-white w3-border w3-border-black w3-round"> Clear Canvas</button>	
-	<!--created button to clear the canvas-->
+	<button onclick="draw_d();" class="w3-button w3-grey w3-border w3-border-black w3-round"> Clear Canvas</button>	
+	<!--created button to clear the canvas -->
 </div>		
 	
 

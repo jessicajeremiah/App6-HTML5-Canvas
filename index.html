@@ -42,13 +42,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 /* making an element for the canvas using the example from diveintohtml5 in app-6 instructions */	
 var a_canvas = document.getElementById("a"); 	
 
+	<canvas width="300" height="225"></canvas> 
+	
 /* created getelementid variable that calls back to original variable 'a' */
 // used 'a' 'b' 'c' 'd'	as pages that i can recall back to //
 /*  created FillRect and i put random x,y,height,width values to just test out how the rectangle will look when created, and made adjustments after I made the buttons. */
 function draw_a (){
 	var a_canvas = document.getElementById("a");
 	var a_context = a_canvas.getContext("2d");
-	a_context.fillRect(7, 7, 35, 59); //increased width and height for rectangle
+	a_context.fillRect(15, 15, 50, 70); //increased width and height for rectangle
 	a_context.fillStyle = "Blue"; //code to change the color of the rectangle to a solid blue; doing this code alone also changed my font color, so I need to make a separate code for the font//
 }		 
 

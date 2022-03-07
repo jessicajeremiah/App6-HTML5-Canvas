@@ -66,8 +66,7 @@ function draw_c (){
 	var c_context = c_canvas.getContext("2d");
 // using the same format as my other functions to call back my 'a' canvas //
 	var meme = new Image();
-	meme.src = "https://cms.qz.com/wp-content/uploads/2018/07/meme-featured.jpg?quality=75&strip=all&w=900&h=900&crop=1=cc">
-	
+	meme.src = "meme.jpeg"	
 	meme.onload = function() {
 	// when making the create image function and variables, I realized that, just like recalling back to my canvas element "a", I also need to conveniently call back to an image, so I am creating a variable called "birb" (aka bird) that I can effectively recall to back in the function; I might consider moving this variable under the create image function if this placement does not work //
 	c_context.drawImage(meme, 20, 150, 300, 300); //using very large y value so that image doesn't cover rectangle and name; initially used negative y value but that shifted the image up instead of down//

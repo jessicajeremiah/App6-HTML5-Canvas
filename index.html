@@ -68,12 +68,12 @@ function draw_c (){
 	var c_canvas = document.getElementById("a");
 	var c_context = c_canvas.getContext("2d");
 // using the same format as my other functions to call back my 'a' canvas //
-	var birb = new Image();
-	birb.src = "https://imagesvc.meredithcorp.io/v3/jumpstartpure/image?url=https://cf-images.us-east-1.prod.boltdns.net/v1/static/1125866826/8784cfd6-daa6-41da-83f1-1b0544905f7b/0a9b9056-3f44-4140-a934-c8903de417da/1280x720/match/image.jpg&w=1280&h=720&q=90&c=cc">
+	var meme = new Image();
+	meme.src = "https://cms.qz.com/wp-content/uploads/2018/07/meme-featured.jpg?quality=75&strip=all&w=900&h=900&crop=1=cc">
 	
-	birb.onload = function() {
-// when making the create image function and variables, I realized that, just like recalling back to my canvas element "a", I also need to conveniently call back to an image, so I am creating a variable called "birb" (aka bird) that I can effectively recall to back in the function; I might consider moving this variable under the create iage function if this placement does not work //
-	c_context.drawImage(birb, 20, 150, 300, 300); //using very large y value so that image doesn't cover rectangle and name; initially used negative y value but that shifted the image up instead of down//
+	meme.onload = function() {
+	// when making the create image function and variables, I realized that, just like recalling back to my canvas element "a", I also need to conveniently call back to an image, so I am creating a variable called "birb" (aka bird) that I can effectively recall to back in the function; I might consider moving this variable under the create image function if this placement does not work //
+	c_context.drawImage(meme, 20, 150, 300, 300); //using very large y value so that image doesn't cover rectangle and name; initially used negative y value but that shifted the image up instead of down//
 	};
 }
 	// recalling back to my image variable "birb", trying out random x,y,width,height to see what the image looks like if it fills up my rectangle completely //

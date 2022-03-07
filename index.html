@@ -40,9 +40,10 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console which is found in developers tools that outputs the time stamp. */
 
 /* making an element for the canvas using the example from diveintohtml5 in app-6 instructions */	
-var a_canvas = document.getElementById("a"); 	
 
-	<canvas width="300" height="225"></canvas> 
+<canvas id="a" width="300" height="225"></canvas>
+	
+var a_canvas = document.getElementById("a"); 	
 	
 /* created getelementid variable that calls back to original variable 'a' */
 // used 'a' 'b' 'c' 'd'	as pages that i can recall back to //
@@ -50,7 +51,7 @@ var a_canvas = document.getElementById("a");
 function draw_a (){
 	var a_canvas = document.getElementById("a");
 	var a_context = a_canvas.getContext("2d");
-	a_context.fillRect(15, 15, 50, 70); //increased width and height for rectangle
+	a_context.fillRect(50, 25, 150, 100); //increased width and height for rectangle
 	a_context.fillStyle = "Blue"; //code to change the color of the rectangle to a solid blue; doing this code alone also changed my font color, so I need to make a separate code for the font//
 }		 
 

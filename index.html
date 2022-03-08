@@ -45,8 +45,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 var a_canvas = document.getElementById("a"); 	
 	
 /* created getelementid variable that calls back to original variable 'a' */
-// used 'a' 'b' 'c' 'd'	as pages that i can recall back to //
-/*  created FillRect and i put random x,y,height,width values to just test out how the rectangle will look when created, and made adjustments after I made the buttons. */
+// used 'a' 'b' 'c' 'd'	as variables that i can recall back to //
+/*  created FillRect and i put random x,y,height,width values and made adjustments after I made the buttons. */
 function draw_a (){
 	var a_canvas = document.getElementById("a");
 	var a_context = a_canvas.getContext("2d");
@@ -58,8 +58,7 @@ function draw_a (){
 function draw_b (){
 	var b_canvas = document.getElementById("a");
 	var b_context = b_canvas.getContext("2d");
-	document.getElementById("a").style.color = "#ff0000"; //this hex code doesn't change the color of the button, I need to find an alternative.//
-	/* using same format as before to call back to my canvas element with the id of 'a' */
+	document.getElementById("a").style.color = "#ff0000"; //this hex code doesn't change the color of the button,
 	b_context.font = '18px Comic Sans MS' /* used a random font as my placeholder for the text; I can make the font any font that I want */
 	b_context.fillText("Jessica", 150, 50); //shifted the text to the right//
 	
@@ -81,7 +80,7 @@ function draw_c (){
 	// recalling back to my image variable "meme", trying out random x,y,width,height to see what the image looks like if it fills up my rectangle completely //
 	
 	
-/* code to clear my canvas, putting random maxed x,y,width,height values to see if it'll clear. If not, I might need to put in variables that can clear based on changes in the coordinates. */		
+/* code to clear my canvas, putting random maxed x,y,width,height values to see if it'll clear. */		
 function draw_d (){
 	var d_canvas = document.getElementById("a");
 	var d_context = d_canvas.getContext("2d");
